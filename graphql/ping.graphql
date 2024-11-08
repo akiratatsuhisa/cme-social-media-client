@@ -1,0 +1,14 @@
+subscription MessageChanged($roomId: String!) {
+  messageChanged(roomId: $roomId) {
+    id
+    authorId
+    author {
+      id
+      name
+    }
+  }
+}
+
+query Ping {
+  ping
+}
